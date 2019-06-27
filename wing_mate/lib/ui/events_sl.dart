@@ -25,8 +25,8 @@ class EventsSL extends StatelessWidget {
             new BottomNavigationBarItem(icon: new Icon(Icons.event), title: new Text("Events")),
             new BottomNavigationBarItem(icon: new Icon(Icons.music_note), title: new Text("Group Play")),
           ], onTap: (int i){
-          if(i==0) Navigator.popAndPushNamed(context, '/home');
-          else if(i==2) Navigator.popAndPushNamed(context, '/group_play_sl');
+          if(i==0) Navigator.pushReplacementNamed(context, '/home');
+          else if(i==2) Navigator.pushReplacementNamed(context, '/group_play_sl');
         },)
     );
   }

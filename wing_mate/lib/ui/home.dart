@@ -31,8 +31,8 @@ class Home extends StatelessWidget {
             new BottomNavigationBarItem(icon: new Icon(Icons.event), title: new Text("Events")),
             new BottomNavigationBarItem(icon: new Icon(Icons.music_note), title: new Text("Group Play")),
           ], onTap: (int i){
-            if(i==1) Navigator.popAndPushNamed(context, '/events_sl');
-            else if(i==2) Navigator.popAndPushNamed(context, '/group_play_sl');
+            if(i==1) Navigator.pushReplacementNamed(context, '/events_sl');
+            else if(i==2) Navigator.pushReplacementNamed(context, '/group_play_sl');
           },)
     );
   }
