@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'events.dart';
 import 'events_form.dart';
 
-class EventsSL extends StatelessWidget {
+class EventsFormSL extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
@@ -17,13 +16,7 @@ class EventsSL extends StatelessWidget {
             new IconButton(icon: new Icon(Icons.dehaze), onPressed: () => debugPrint("About")),
           ],
         ),
-        body: new Events(),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () => Navigator.pushReplacementNamed(context, '/events_form_sl'),
-          tooltip: 'All Contacts',
-          child: Icon(Icons.add),
-          backgroundColor: Colors.blue,
-        ),
+        body: new EventsForm(),
         bottomNavigationBar: new BottomNavigationBar(
           backgroundColor: Colors.lightBlueAccent,
           elevation: 10.0,

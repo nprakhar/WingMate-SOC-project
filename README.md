@@ -1,1 +1,0 @@
-# WingMate-SOC-project
